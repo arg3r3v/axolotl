@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axolotl - Colectivo Interdisciplinario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>AXOLOTL</h1>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+            </ul>
+        </nav>
+        <button id="menu-button"><img src="img/menu.png" alt="Menú"></button>
+    </header>
+    <div id="overlay"></div>
+    <div id="fullscreen-menu">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quienes">¿Quienes somos?</a></li>
+            <li><a href="#descubre">Descubre</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <footer>
+            <a href="#dona">Dona</a>
+        </footer>
+    </div>
+    <main>
+        <section id="inicio" class="parallax">
+            <div id="carousel-container">
+                <div id="carousel">
+                    <img src="img/img1.jpeg" alt="Imagen 1">
+                    <img src="img/img2.jpeg" alt="Imagen 2">
+                    <img src="img/img3.jpeg" alt="Imagen 3">
+                </div>
+                <button class="carousel-button" id="prev-btn">&#9664;</button>
+                <button class="carousel-button" id="next-btn">&#9654;</button>
+            </div>
+            <h2>Bienvenidxs a Axolotl</h2>
+            <p>El Colectivo Axolotl es un grupo interdisciplinario de estudiantes, principalmente de la Universidad Autónoma Metropolitana (UAM), comprometidas con la preservación y el estudio de los recursos hídricos, con un enfoque especial en los humedales y otros ecosistemas acuáticos. Nuestro nombre, inspirado en el ajolote, un símbolo de resiliencia y regeneración, refleja nuestra misión. de restaurar y proteger los entornos naturales.</p>
+        </section>
+        <section id="quienes" class="parallax">
+            <h2>¿Quienes somos?</h2>
+            <p>Somos un grupo diverso de estudiantes provenientes de diferentes disciplinas académicas, incluyendo Ciencias Sociales y Humanidades (CSH), Ciencias Básicas e Ingeniería (CBI), entre otras. Esta diversidad nos permite abordar los problemas relacionados con el agua desde múltiples perspectivas, integrando conocimientos y habilidades para encontrar soluciones innovadoras y efectivas.</p>
+            <p>Organizamos talleres y actividades educativas para la comunidad, con el objetivo de aumentar el conocimiento sobre la importancia de los humedales y promover prácticas sostenibles. Estos eventos incluyen charlas, exposiciones fotográficas y colaboraciones con artistas locales.</p>
+            <p>Llevamos a cabo proyectos de restauración ecológica, como la limpieza de humedales y la plantación de vegetación nativa. Trabajamos en colaboración con la comunidad local para implementar soluciones sostenibles y fomentar el sentido de pertenencia y cuidado por el medio ambiente.</p>
+            <p>Promovemos la integración de la cultura y el arte en nuestras actividades, organizando eventos como conciertos y exposiciones. que resaltan la relación entre la comunidad y los ecosistemas acuáticos. Estos eventos ayudan a reunir a la comunidad ya recaudar fondos para nuestras iniciativas.</p>
+        </section>
+        <section id="descubre">
+            <h2>Descubre</h2>
+            <p>Conoce nuestras áreas de trabajo e investigaciones.</p>
+            <div class="circle-container">
+                <div class="circle-item">
+                    <div class="circle">
+                        <img src="img/img4.jpeg" alt="Investigación">
+                    </div>
+                    <p>Investigación</p>
+                </div>
+                <div class="circle-item">
+                    <div class="circle">
+                        <img src="img/img5.jpeg" alt="Actividades">
+                    </div>
+                    <p>Actividades</p>
+                </div>
+                <div class="circle-item">
+                    <div class="circle">
+                        <img src="img/img6.jpeg" alt="Cultura">
+                    </div>
+                    <p>Cultura</p>
+                </div>
+            </div>
+        </section>
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotrxs</h2>
+            <p>El Colectivo Axolotl no es solo un grupo; es una comunidad de amigos unidos por una pasión compartida: el amor por el agua y el deseo de proteger nuestros ecosistemas acuáticos. Todo comenzó como una idea entre un grupo diverso de. estudiantes de diferentes carreras y divisiones en la Universidad Autónoma Metropolitana (UAM). Nos dimos cuenta de que, aunque proveníamos de diferentes campos de estudio, todos compartíamos un profundo interés en encontrar formas creativas de abordar las problemáticas ambientales.</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Contáctanos para más información.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61557920724331&mibextid=ZbWKwL"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/colectivo_axolotluam?igsh=MWoyYWJzMmJ2eGdoYg=="><img src="img/instagram.png" alt="Instagram"></a>
+                <a href="https://forms.gle/6XXDRx3f3roatFSs5"><img src="img/solicitud.png" alt="Solicitud"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Axolotl. Todos los derechos reservados.</p>
+    </footer>
+    <a href="juego.html" target="_blank" class="fixed-icon">
+        <img src="img/axolotl1.png" alt="Icono Fijo">
+    </a>
+</body>
+</html>
