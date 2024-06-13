@@ -467,7 +467,7 @@ footer p {
     }
     
     .fixed-icon {
-        bottom: 5px;
+        bottom: 5vh;
         right: 5px;
         width: 15vh;
         height: 15vh;
