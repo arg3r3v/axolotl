@@ -233,10 +233,11 @@ section p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .circle img:hover {
-    transform: scale(1.05);
+    transform: scale(1.5);
 }
 
 #contacto {
@@ -305,18 +306,136 @@ footer p {
 .fixed-icon {
     position: fixed;
     bottom: 5vh;
-    right: 5vh;
+    right: 5vh; /* Cambiado a la derecha */
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Para que el botón de cierre se coloque correctamente */
 }
 
-.fixed-icon img {
-    width: 15vh;
+.icon-container {
+    background-color: #6A0DAD; /* Mismo color que el header */
+    border-radius: 50%;
+    width: 20vh; /* Asegurar que el contenedor sea circular */
+    height: 20vh; /* Asegurar que el contenedor sea circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.icon-container img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.icon-container img:hover {
+    transform: scale(1.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: -1vh; /* Ajuste para posicionar fuera del contenedor */
+    left: -1vh; /* Ajuste para posicionar fuera del contenedor */
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 2vh;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 3vh;
+    font-weight: bold;
+    z-index: 1001; /* Asegurar que el botón esté por encima del contenedor */
+}
+
+/* Posicionamiento del icono fijo en la esquina superior izquierda */
+.fixed-icon-left {
+    position: fixed;
+    top: 20vh;
+    left: 10px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixed-icon-left img {
+    width: 20vh; /* Ajusta según sea necesario */
     height: auto;
     transition: transform 0.3s ease;
 }
 
-.fixed-icon img:hover {
+.fixed-icon-left img:hover {
     transform: scale(1.1);
+}
+
+.close-btn-left {
+    position: absolute;
+    top: -1vh; /* Ajuste para posicionar fuera del contenedor */
+    right: -1vh; /* Ajuste para posicionar fuera del contenedor */
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 2vh;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 3vh;
+    font-weight: bold;
+    z-index: 1001; /* Asegurar que el botón esté por encima del contenedor */
+}
+
+.close-btn-left:hover {
+    color: red;
+}
+
+/* Estilos para el popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1002;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.popup-close:hover {
+    color: red;
 }
 
 @media (max-width: 768px) {
@@ -335,20 +454,44 @@ footer p {
         width: 30%;
     }
 
+    .circle img {
+        transition: transform 0.3s ease;
+    }
+
     .circle img:hover {
-        transform: scale(1.05);
+        transform: scale(1.5);
     }
 
     header h1 {
         font-size: 1.5rem;
     }
+    
+    .fixed-icon {
+        bottom: 5px;
+        right: 5px;
+        width: 15vh;
+        height: 15vh;
+    }
 
-.fixed-icon img {
-    width: 10vh;
-    height: auto;
-    transition: transform 0.3s ease;
-}
+    .fixed-icon-left {
+        top: 10vh;
+        left: 5px;
+        width: 15vh;
+        height: 15vh;
+    }
 
+    .icon-container,
+    .fixed-icon-left img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .close-btn,
+    .close-btn-left {
+        width: 2vh;
+        height: 2vh;
+        font-size: 3vh;
+    }
 @media (min-width: 769px) and (max-width: 1200px) {
     .circle-item {
         width: 45%;
