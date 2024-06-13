@@ -27,11 +27,11 @@
     <div id="overlay"></div>
     <div id="fullscreen-menu">
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#noticias">Noticias</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#eventos">Eventos</a></li>
-            <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#equipo">Equipo</a></li>
         </ul>
     </div>
     <main>
@@ -50,7 +50,7 @@
         </section>
         <section id="quienes" class="parallax">
             <h2>¿Quienes somos?</h2>
-            <p>Somos un grupo diverso de estudiantes provenientes de diferentes disciplinas académicas, incluyendo Ciencias Sociales y Humanidades (CSH), Ciencias Básicas e Ingeniería (CBI), entre otras. Esta diversidad nos permite abordar los problemas relacionados con el agua desde múltiples perspectivas, integrando conocimientos y habilidades para encontrar soluciones innovadoras y efectivas.</p>
+            <p>Somos un colectivo interdisciplinar que se preocupa por el bienestar social resolviendo problemas requeridos por la comunidad, respecto al agua, vistos desde un punto de vista técnico, social y ambiental. es por ello que nos enfocamos en fomentar, promocionar y conservar la identidad del recurso hídrico, todo esto con ayuda de la sociedad civil y los sectores público y privado.</p>
             <p>Organizamos talleres y actividades educativas para la comunidad, con el objetivo de aumentar el conocimiento sobre la importancia de los humedales y promover prácticas sostenibles. Estos eventos incluyen charlas, exposiciones fotográficas y colaboraciones con artistas locales.</p>
             <p>Llevamos a cabo proyectos de restauración ecológica, como la limpieza de humedales y la plantación de vegetación nativa. Trabajamos en colaboración con la comunidad local para implementar soluciones sostenibles y fomentar el sentido de pertenencia y cuidado por el medio ambiente.</p>
             <p>Promovemos la integración de la cultura y el arte en nuestras actividades, organizando eventos como conciertos y exposiciones. que resaltan la relación entre la comunidad y los ecosistemas acuáticos. Estos eventos ayudan a reunir a la comunidad ya recaudar fondos para nuestras iniciativas.</p>
@@ -97,7 +97,24 @@
         <p>&copy; 2024 Axolotl. Todos los derechos reservados.</p>
     </footer>
     <a href="juego.html" target="_blank" class="fixed-icon">
-        <img src="img/axolotl1.png" alt="Icono Fijo">
+    <div class="icon-container">
+        <img src="img/axolotl1.png" alt="Ícono">
+        <button class="close-btn">&times;</button>
+    </div>
     </a>
+
+    <div class="fixed-icon-left">
+        <img src="img/unmensaje.png" alt="Ícono" id="popup-icon">
+        <button class="close-btn-left">&times;</button>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <p>Imagine un mundo donde los bosques florecen y los océanos están llenos de vida. Donde la energía es tan limpia como un arroyo de montaña. Donde todos tengan seguridad, dignidad y alegría. No podemos construir este futuro solos, pero</p>
+        </div>
+    </div>
+
 </body>
 </html>
